@@ -69,11 +69,9 @@
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
   },
-  "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
-  },
   "dependencies": {
+      "react": "^16.9.0",
+      "react-dom": "^16.9.0",
     "classnames": "^2.2.6",
     "lodash.debounce": "^4.0.8",
     "lodash.memoize": "^4.1.2",

@@ -72,7 +72,7 @@ class PhoneInput extends React.Component {
     value: '',
     placeholder: '+1 (702) 123-4567',
     searchPlaceholder: 'search',
-    flagsImagePath: './flags.png',
+    // flagsImagePath: './flags.png',
     disabled: false,
 
     containerStyle: {},
