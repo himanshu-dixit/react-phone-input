@@ -664,11 +664,11 @@ class PhoneInput extends React.Component {
     const onlyCountries = this.props.disableAreaCodes ? this.deleteAreaCodes(this.state.onlyCountries) : this.state.onlyCountries;
 
     const probableCandidate = this.getProbableCandidate(this.state.queryString) || this.state.onlyCountries[0];
-    const probableCandidateIndex = onlyCountries.findIndex(o => o == probableCandidate) + (preferredSelected ? this.state.preferredCountries.length : 0);
+    const probableCandidateIndex = onlyCountries.findIndex(o => o == probableCandidate) + (preferredSelected ? this.state.preferredCountries.length : 0) + 3;
     this.scrollTo(this.getElement(probableCandidateIndex + (preferredSelected ? 0 : this.state.preferredCountries.length)), true);
     this.scrollTo(this.getElement(probableCandidateIndex), true);
 
-    this.setState({queryString: '', highlightCountryIndex: probableCandidateIndex});
+    this.setState({ queryString: '', highlightCountryIndex: probableCandidateIndex });
   }
 
   handleKeydown = (e) => {
